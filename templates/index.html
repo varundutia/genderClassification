@@ -1,0 +1,48 @@
+<html>  
+<head>  
+    <title>upload</title>  
+    <style media="screen">
+
+        body{
+          background-color:#F0F8FF;
+        }
+  
+        form{
+          margin:50px;
+          font-size:20px;
+        }
+        div{
+          margin:30px;
+          margin-top:40px;
+        }
+  
+        label{
+          font-weight:bold;
+          margin-right:10px;
+        }
+        span{
+          margin-right:30px;
+        }
+  
+        input,button{
+          padding:8px;
+        }
+        button:hover,input:hover{
+          border:#5F9F9F 2px solid;
+          font-weight:bold;
+        }
+      </style>
+</head>  
+<body> 
+    <div>
+        <h1>Gender Classification and prediction</h1>
+    </div> 
+    <form action = "/success" method = "post" enctype="multipart/form-data">  
+        <input type="file" name="file" />  
+        <input type = "submit" value="predict">  
+    </form>
+      <div>
+          <h2>{{message}}</h2>
+      </div>
+</body>  
+</html>  
